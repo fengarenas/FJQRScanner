@@ -1,4 +1,4 @@
-// Copyright (c) 2013 FJBannerView
+// Copyright (c) 2015 FJQRScanner
 // Author fengjun
 // Blog:http://devfeng.com/
 // Url :https://github.com/fengarenas/FJQRScanner
@@ -20,6 +20,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
