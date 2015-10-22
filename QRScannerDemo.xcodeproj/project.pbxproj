@@ -13,6 +13,7 @@
 		2247E2191BD88B4E00750B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2247E2171BD88B4E00750B81 /* Main.storyboard */; };
 		2247E21B1BD88B4E00750B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2247E21A1BD88B4E00750B81 /* Assets.xcassets */; };
 		2247E21E1BD88B4E00750B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2247E21C1BD88B4E00750B81 /* LaunchScreen.storyboard */; };
+		2247E2321BD8B2ED00750B81 /* FJQRScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247E2311BD8B2ED00750B81 /* FJQRScanner.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2247E21A1BD88B4E00750B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2247E21D1BD88B4E00750B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2247E21F1BD88B4E00750B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2247E2301BD8B2ED00750B81 /* FJQRScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJQRScanner.h; sourceTree = "<group>"; };
+		2247E2311BD8B2ED00750B81 /* FJQRScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJQRScanner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		2247E20D1BD88B4E00750B81 /* QRScannerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2247E22F1BD8B2ED00750B81 /* FJQRScanner */,
 				2247E2111BD88B4E00750B81 /* AppDelegate.h */,
 				2247E2121BD88B4E00750B81 /* AppDelegate.m */,
 				2247E2141BD88B4E00750B81 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				2247E20F1BD88B4E00750B81 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2247E22F1BD8B2ED00750B81 /* FJQRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				2247E2301BD8B2ED00750B81 /* FJQRScanner.h */,
+				2247E2311BD8B2ED00750B81 /* FJQRScanner.m */,
+			);
+			path = FJQRScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2247E2161BD88B4E00750B81 /* ViewController.m in Sources */,
+				2247E2321BD8B2ED00750B81 /* FJQRScanner.m in Sources */,
 				2247E2131BD88B4E00750B81 /* AppDelegate.m in Sources */,
 				2247E2101BD88B4E00750B81 /* main.m in Sources */,
 			);
@@ -261,9 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRScannerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FengJun.QRScannerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baofood.trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -272,9 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QRScannerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FengJun.QRScannerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baofood.trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
