@@ -18,10 +18,6 @@ import "FJQRScanner.h"
         NSLog(@"block Capture : %@",result);
     }];
     
-    [scannerView setFrame:CGRectMake(0, 0, 280, 280)];
-    
-    scannerView.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0);
-    
     [self.view addSubview:scannerView];
 
     [scannerView start];
